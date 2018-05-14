@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxSwiftBasics3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EG-I2-cPX">
+                                <rect key="frame" x="10" y="120" width="355" height="30"/>
+                                <state key="normal" title="Two VCs (delegate)"/>
+                                <connections>
+                                    <action selector="showTwoOptionsDelegateVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WsJ-yx-tYa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAg-Es-cV9">
+                                <rect key="frame" x="10" y="190" width="355" height="30"/>
+                                <state key="normal" title="Two VCs (Observables)"/>
+                                <connections>
+                                    <action selector="showTwoOptionsObservableVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMf-5K-qyY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6EG-I2-cPX" secondAttribute="trailing" constant="10" id="5Ep-tH-kHi"/>
+                            <constraint firstItem="cAg-Es-cV9" firstAttribute="top" secondItem="6EG-I2-cPX" secondAttribute="bottom" constant="40" id="A0V-0X-mc8"/>
+                            <constraint firstItem="cAg-Es-cV9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="P9w-hc-nuc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cAg-Es-cV9" secondAttribute="trailing" constant="10" id="Yj2-ob-FJQ"/>
+                            <constraint firstItem="6EG-I2-cPX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Zy5-vz-sU7"/>
+                            <constraint firstItem="6EG-I2-cPX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="wdx-2V-hEm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="116"/>
+        </scene>
+        <!--Two Options DelegateVC-->
+        <scene sceneID="FaT-xA-HfB">
+            <objects>
+                <viewController storyboardIdentifier="TwoOptionsDelegateVC" id="gFL-Xn-hRA" customClass="TwoOptionsDelegateVC" customModule="ReactiveStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DZt-HV-Nua">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWD-9g-abu">
+                                <rect key="frame" x="20" y="120" width="335" height="30"/>
+                                <state key="normal" title="Option 1"/>
+                                <connections>
+                                    <action selector="optionOneClicked:" destination="gFL-Xn-hRA" eventType="touchUpInside" id="qwb-A2-zjB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jb8-Y4-CIZ">
+                                <rect key="frame" x="20" y="200" width="335" height="30"/>
+                                <state key="normal" title="Option 2"/>
+                                <connections>
+                                    <action selector="optionTwoClicked:" destination="gFL-Xn-hRA" eventType="touchUpInside" id="qpN-40-aG7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wWD-9g-abu" firstAttribute="leading" secondItem="vrU-CA-R5h" secondAttribute="leading" constant="20" id="5Ou-Xc-8Ty"/>
+                            <constraint firstItem="vrU-CA-R5h" firstAttribute="trailing" secondItem="wWD-9g-abu" secondAttribute="trailing" constant="20" id="KCg-dv-341"/>
+                            <constraint firstItem="wWD-9g-abu" firstAttribute="top" secondItem="vrU-CA-R5h" secondAttribute="top" constant="100" id="OPy-h2-mFw"/>
+                            <constraint firstItem="vrU-CA-R5h" firstAttribute="trailing" secondItem="jb8-Y4-CIZ" secondAttribute="trailing" constant="20" id="k9g-Yo-jyE"/>
+                            <constraint firstItem="jb8-Y4-CIZ" firstAttribute="leading" secondItem="vrU-CA-R5h" secondAttribute="leading" constant="20" id="st4-do-iFL"/>
+                            <constraint firstItem="jb8-Y4-CIZ" firstAttribute="top" secondItem="wWD-9g-abu" secondAttribute="bottom" constant="50" id="u0O-SC-v9D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vrU-CA-R5h"/>
+                    </view>
+                    <connections>
+                        <outlet property="optionOneButton" destination="wWD-9g-abu" id="Bgo-p4-wmg"/>
+                        <outlet property="optionTwoButton" destination="jb8-Y4-CIZ" id="9Jy-Yz-6e8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOM-oy-Wl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284" y="891"/>
+        </scene>
+        <!--Two Options ObservableVC-->
+        <scene sceneID="X4l-2g-mo4">
+            <objects>
+                <viewController storyboardIdentifier="TwoOptionsObservableVC" id="Pcv-O2-BK9" customClass="TwoOptionsObservableVC" customModule="ReactiveStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VgU-iM-2HS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgS-T8-ePx">
+                                <rect key="frame" x="20" y="120" width="335" height="30"/>
+                                <state key="normal" title="Option 1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxL-v1-ELo">
+                                <rect key="frame" x="20" y="200" width="335" height="30"/>
+                                <state key="normal" title="Option 2"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zxL-v1-ELo" firstAttribute="top" secondItem="KgS-T8-ePx" secondAttribute="bottom" constant="50" id="395-oJ-Vst"/>
+                            <constraint firstItem="zxL-v1-ELo" firstAttribute="leading" secondItem="kNd-WI-hXP" secondAttribute="leading" constant="20" id="9m6-Ze-uMY"/>
+                            <constraint firstItem="KgS-T8-ePx" firstAttribute="top" secondItem="kNd-WI-hXP" secondAttribute="top" constant="100" id="O9l-Nc-fzP"/>
+                            <constraint firstItem="kNd-WI-hXP" firstAttribute="trailing" secondItem="zxL-v1-ELo" secondAttribute="trailing" constant="20" id="S5a-2D-q3P"/>
+                            <constraint firstItem="kNd-WI-hXP" firstAttribute="trailing" secondItem="KgS-T8-ePx" secondAttribute="trailing" constant="20" id="gpi-Qf-dce"/>
+                            <constraint firstItem="KgS-T8-ePx" firstAttribute="leading" secondItem="kNd-WI-hXP" secondAttribute="leading" constant="20" id="tSv-5d-ft9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kNd-WI-hXP"/>
+                    </view>
+                    <connections>
+                        <outlet property="optionOneButton" destination="KgS-T8-ePx" id="ZIX-Gh-k0g"/>
+                        <outlet property="optionTwoButton" destination="zxL-v1-ELo" id="zlW-fD-cac"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUM-HS-7HN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="890"/>
+        </scene>
+    </scenes>
+</document>
