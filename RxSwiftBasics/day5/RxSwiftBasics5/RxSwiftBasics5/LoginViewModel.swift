@@ -1,6 +1,6 @@
 //
 //  LoginViewModel.swift
-//  LoginDemo
+//  RxSwiftBasics5
 //
 //  Created by Young Kim on 2018-05-14.
 //  Copyright © 2018 Younghwan Kim. All rights reserved.
@@ -24,7 +24,7 @@ struct LoginViewModel {
         }
     }
     
-    func login() -> Observable<AutenticationStatus> {
-        return LoginBusinessLogic.shared.login(username: username.value, password: password.value)
+    func loginFlow() -> Observable<ProfileStatus> {
+        return LoginBusinessLogic.shared.loginFlow(username: username.value, password: password.value)
     }
 }

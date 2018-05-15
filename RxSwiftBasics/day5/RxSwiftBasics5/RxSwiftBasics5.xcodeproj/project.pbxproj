@@ -16,6 +16,9 @@
 		195E8DBB20AA672700B373CE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E8DBA20AA672700B373CE /* ProfileViewController.swift */; };
 		195E8DBD20AA690000B373CE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E8DBC20AA690000B373CE /* LoginViewModel.swift */; };
 		195E8DBF20AA73C100B373CE /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E8DBE20AA73C100B373CE /* ProfileViewModel.swift */; };
+		8EBAC2A220AB19E900F35EE1 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAC29F20AB19E800F35EE1 /* SectionCell.swift */; };
+		8EBAC2A320AB19E900F35EE1 /* ProfileFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAC2A020AB19E800F35EE1 /* ProfileFormCell.swift */; };
+		8EBAC2A420AB19E900F35EE1 /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAC2A120AB19E800F35EE1 /* FooterCell.swift */; };
 		AEAD8545A550B89AC1CC546C /* Pods_RxSwiftBasics5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3590F524A00020D576A9C6 /* Pods_RxSwiftBasics5.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,9 @@
 		195E8DBC20AA690000B373CE /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		195E8DBE20AA73C100B373CE /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		7F8B6AB3D4799CD1DD8EAA8D /* Pods-RxSwiftBasics5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBasics5.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftBasics5/Pods-RxSwiftBasics5.release.xcconfig"; sourceTree = "<group>"; };
+		8EBAC29F20AB19E800F35EE1 /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		8EBAC2A020AB19E800F35EE1 /* ProfileFormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFormCell.swift; sourceTree = "<group>"; };
+		8EBAC2A120AB19E800F35EE1 /* FooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
 		9C3590F524A00020D576A9C6 /* Pods_RxSwiftBasics5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftBasics5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE706FCC81ABC83787B1A90E /* Pods-RxSwiftBasics5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBasics5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftBasics5/Pods-RxSwiftBasics5.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +81,9 @@
 				195E8DBA20AA672700B373CE /* ProfileViewController.swift */,
 				195E8DB820AA589200B373CE /* LoginBusinessLogic.swift */,
 				195E8DBE20AA73C100B373CE /* ProfileViewModel.swift */,
+				8EBAC2A120AB19E800F35EE1 /* FooterCell.swift */,
+				8EBAC2A020AB19E800F35EE1 /* ProfileFormCell.swift */,
+				8EBAC29F20AB19E800F35EE1 /* SectionCell.swift */,
 				195E8DAA20AA4D0600B373CE /* Main.storyboard */,
 				195E8DAD20AA4D0700B373CE /* Assets.xcassets */,
 				195E8DAF20AA4D0700B373CE /* LaunchScreen.storyboard */,
@@ -216,8 +225,11 @@
 			files = (
 				195E8DBF20AA73C100B373CE /* ProfileViewModel.swift in Sources */,
 				195E8DA920AA4D0600B373CE /* ViewController.swift in Sources */,
+				8EBAC2A220AB19E900F35EE1 /* SectionCell.swift in Sources */,
 				195E8DA720AA4D0600B373CE /* AppDelegate.swift in Sources */,
+				8EBAC2A420AB19E900F35EE1 /* FooterCell.swift in Sources */,
 				195E8DBB20AA672700B373CE /* ProfileViewController.swift in Sources */,
+				8EBAC2A320AB19E900F35EE1 /* ProfileFormCell.swift in Sources */,
 				195E8DBD20AA690000B373CE /* LoginViewModel.swift in Sources */,
 				195E8DB920AA589200B373CE /* LoginBusinessLogic.swift in Sources */,
 			);

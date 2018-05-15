@@ -38,23 +38,20 @@ class ViewController: UIViewController {
         loginButton.rx.tap
             .withLatestFrom(viewModel.isValid)
             .filter { $0 }
-            .flatMapLatest { [unowned self] valid -> Observable<AutenticationStatus> in
-                self.viewModel.login()
+            .flatMapLatest { [unowned self] valid -> Observable<ProfileStatus> in
+                self.viewModel.loginFlow()
             }
-            .subscribe(onNext: { [unowned self] autenticationStatus in
-                switch autenticationStatus {
-                case .password_error(let error_msg):
+            .subscribe(onNext: { [unowned self] profileStatus in
+                switch profileStatus {
+                case .error(let error_msg):
                     self.showError(error: error_msg)
                     break
-                case .success(let username):
+                case .userprofile(let profile):
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     if let vc = storyboard.instantiateViewController(withIdentifier: "profileVC") as? ProfileViewController {
-                        vc.userid = username
+                        vc.profileViewModel = ProfileViewModel(profile: profile)
                         self.navigationController?.pushViewController(vc, animated: true)
                     }
-                    break
-                case .no_user(let error_msg):
-                    self.showError(error: error_msg)
                     break
                 }
             })
@@ -78,6 +75,5 @@ class ViewController: UIViewController {
         alert.addAction(alertAction)
         present(alert, animated: true, completion: nil)
     }
-
 }
 

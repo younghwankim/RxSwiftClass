@@ -11,12 +11,12 @@ import RxSwift
 import RxCocoa
 
 class UserProfileResponseDto: NSObject {
-    public var firstName: String?
-    public var lastName: String?
+    var firstName: String?
+    var lastName: String?
 
-    public var email: String?
-    public var mobilePhoneAreaCode: String?
-    public var mobilePhoneNo: String?
+    var email: String?
+    var mobilePhoneAreaCode: String?
+    var mobilePhoneNo: String?
     
     override init() {
     }
@@ -29,16 +29,46 @@ enum AutenticationStatus {
 }
 
 enum ProfileStatus {
-    case error
+    case error(String)
     case userprofile(UserProfileResponseDto)
 }
 
 class LoginBusinessLogic {
     static var shared = LoginBusinessLogic()
-    
+    let disposeBag = DisposeBag()
     fileprivate init() {}
+    var userId = ""
     
-    func login(username: String, password: String) -> Observable<AutenticationStatus> {
+    func loginFlow(username: String, password: String) -> Observable<ProfileStatus> {
+        return Observable.create { observer in
+            self.login(username: username, password: password)
+                .filter{
+                    switch $0 {
+                    case .no_user(let error):
+                        observer.onNext(ProfileStatus.error(error))
+                        observer.onCompleted()
+                        return false
+                    case .password_error(let error):
+                        observer.onNext(ProfileStatus.error(error))
+                        observer.onCompleted()
+                        return false
+                    case .success(let user_id):
+                        self.userId = user_id
+                        return true
+                    }
+            }
+            .flatMapLatest { [unowned self] profileStatus -> Observable<ProfileStatus> in
+                self.profile(user: self.userId)
+            }
+            .subscribe(onNext: { profile in
+                observer.onNext(profile)
+                observer.onCompleted()
+            }).disposed(by: self.disposeBag)
+            return Disposables.create()
+        }
+    }
+    
+    private func login(username: String, password: String) -> Observable<AutenticationStatus> {
         return Observable.create { observer in
             if username == "jamesfox" {
                 if password == "password" {
@@ -56,7 +86,7 @@ class LoginBusinessLogic {
         }
     }
     
-    func profile(user: String)  -> Observable<ProfileStatus> {
+    private func profile(user: String)  -> Observable<ProfileStatus> {
         return Observable.create { observer in
             observer.onNext(ProfileStatus.userprofile(self.createUserprofile(user: user)))
             observer.onCompleted()
@@ -64,7 +94,7 @@ class LoginBusinessLogic {
         }
     }
     
-    func createUserprofile(user: String) -> UserProfileResponseDto {
+    private func createUserprofile(user: String) -> UserProfileResponseDto {
         let userProfile = UserProfileResponseDto()
         
         userProfile.firstName = "James"
@@ -76,7 +106,4 @@ class LoginBusinessLogic {
         
         return userProfile
     }
-    
-    
-    
 }
