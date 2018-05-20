@@ -10,12 +10,16 @@
 
 Integrate with API Call (Network Call)
 
+Generic Enumeration Type ( get an idea from Result object in AlamoFire)
+
+
 Lab
 
 
 **Day 2.**
 
-Generic Enumeration Type ( get an idea from Result object in AlamoFire)
+
+Protocol Oriented Programminf in Swift
 
 Group Interface (protocol Extension, Associate type)
 
