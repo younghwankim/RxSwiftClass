@@ -6,17 +6,8 @@
 
 **
 
+
 **Day 1.**
-
-Integrate with API Call (Network Call)
-
-Generic Enumeration Type ( get an idea from Result object in AlamoFire)
-
-
-Lab
-
-
-**Day 2.**
 
 
 Protocol Oriented Programminf in Swift
@@ -25,6 +16,16 @@ Group Interface (protocol Extension, Associate type)
 
 
 Lab
+
+**Day 2.**
+
+Integrate with API Call (Network Call)
+
+Generic Enumeration Type ( get an idea from Result object in AlamoFire)
+
+
+Lab
+
 
 
 **Day 3.**
