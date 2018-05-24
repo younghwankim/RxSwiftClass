@@ -112,6 +112,6 @@
 
 - Schedulers
 
-- UnitTest : RxTest, RxBlocking
+- UnitTest : RxTest, RxBlocking (case: input is an observable, case: output is an observable)
 
 - Lab
