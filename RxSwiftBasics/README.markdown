@@ -1,81 +1,61 @@
-﻿
 
-**
+#RxSwift Basics
+##Day 1.
 
-# RxSwift Basics
+- Reactive Programming Overview (Jafar Husain from Netflix) - Video
 
+- What are Reactive Extensins (Video)
 
+- Use Marble Diagrams (Video)
 
+- Observables
 
-**Day 1.**
+- Observables in Practice 1 (Lab)
 
-Reactive Programming Overview (Jafar Husain from Netflix) - Video
+- Filter, map, flatMap, merge, concat operator
 
-What are Reactive Extensins (Video)
+- Lab
 
-Use Marble Diagrams (Video)
+##Day 2.
 
-Observables
+- Subject (BehaviorSubject, PublishSubject, ReplaySubject)
 
-Observables in Practice 1 (Lab)
+- Subjects in Practice (Lab)
 
+- flatMap, flapMapfirst, flatMapLatest
 
-Filter, map, flatMap, merge, concat operator
+- Lab
 
-Lab
+##Day 3
 
+- RxCocoa ( Button )
 
-**Day 2.**
+- Two VC communications using subject (Replace delegate with Observable and subject)
 
-Subject (BehaviorSubject, PublishSubject, ReplaySubject)
+- Lab
 
-Subjects in Practice (Lab)
+##Day 4
 
-flatMap, flapMapfirst, flatMapLatest
+- Observables in Observable
 
-Lab
+- Enumeration
 
+- Sequential Observable Call
 
-**Day 3**
+- Lab
 
-RxCocoa
+- Merged Calls
 
-Button
+- Lab
 
-Two VC communications using subject
-(Replace delegate with Observable and subject)
+- Observables in Practice 2
 
-Lab
+- Lab
 
+##Day 5
 
-**Day 4**
+- RxCocoa ( Button, TextField, Label )
 
+- TableView binding TableView, TableViewCell
 
-Observables in Observable
-
-Enumeration
-
-Sequential Observable Call
-
-Lab
-
-
-Merged Calls
-
-Lab
-
-Observables in Practice 2
-
-Lab
-
-
-**Day 5**
-
-RxCocoa
-
-Button, TextField, Label
-
-TableView binding
-TableView, TableViewCell
-
-Lab
+- Lab
