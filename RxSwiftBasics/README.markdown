@@ -1,6 +1,6 @@
 
 #RxSwift Basics
-##Day 1.
+**Day 1.**
 
 - Reactive Programming Overview (Jafar Husain from Netflix) - Video
 
@@ -16,7 +16,7 @@
 
 - Lab
 
-##Day 2.
+**Day 2.**
 
 - Subject (BehaviorSubject, PublishSubject, ReplaySubject)
 
@@ -26,7 +26,8 @@
 
 - Lab
 
-##Day 3
+**Day 3**
+
 
 - RxCocoa ( Button )
 
@@ -34,7 +35,8 @@
 
 - Lab
 
-##Day 4
+**Day 4**
+
 
 - Observables in Observable
 
@@ -52,7 +54,8 @@
 
 - Lab
 
-##Day 5
+**Day 5**
+
 
 - RxCocoa ( Button, TextField, Label )
 
