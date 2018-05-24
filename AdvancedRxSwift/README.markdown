@@ -1,55 +1,52 @@
 ﻿
 
-**
 
 # Advanced RxSwift
 
-**
 
 
 **Day 1.**
 
 
-Protocol Oriented Programminf in Swift
+- Protocol Oriented Programming in Swift
 
-Group Interface (protocol Extension, Associate type)
+- Group Interface (protocol Extension, Associate type)
 
 
-Lab
+- Lab
 
 **Day 2.**
 
-Integrate with API Call (Network Call)
+- Integrate with API Call (Network Call)
 
-Generic Enumeration Type ( get an idea from Result object in AlamoFire)
+- Generic Enumeration Type ( get an idea from Result object in AlamoFire)
 
 
-Lab
+- Lab
 
 
 
 **Day 3.**
 
-Binding Track Activity (show / hide ‘Loading’)
+- Binding Track Activity (show / hide ‘Loading’)
 
-Lab
+- Lab
 
 
 **Day 4.**
 
-RxCocoa
+- RxCocoa
 
-Advanced tableview binding
-2-way binding
+- Advanced tableview binding
+- 2-way binding
 
-Lab
+- Lab
 
 
 **Day 5.**
 
-Schedulers
+- Schedulers
 
-UnitTest : RxTest, RxBlocking
+- UnitTest : RxTest, RxBlocking
 
 Lab
-
