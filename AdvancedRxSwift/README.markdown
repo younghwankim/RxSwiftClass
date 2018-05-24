@@ -7,11 +7,9 @@
 
 **Day 1.**
 
-
-- Protocol Oriented Programming in Swift
+- Quick review : Protocol-Oriented Programming in Swift : WWDC 2015 Session 408
 
 - Group Interface (protocol Extension, Associate type)
-
 
 - Lab
 
