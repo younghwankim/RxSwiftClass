@@ -1,5 +1,5 @@
 
-#RxSwift Basics
+*RxSwift Basics*
 **Day 1.**
 
 - Reactive Programming Overview (Jafar Husain from Netflix) - Video
