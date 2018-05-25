@@ -18,38 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIb-4M-aeH">
-                                <rect key="frame" x="137.5" y="188" width="100" height="100"/>
-                                <color key="backgroundColor" white="0.82696600274725274" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spinner-box" translatesAutoresizingMaskIntoConstraints="NO" id="mob-Ju-5qP">
+                                <rect key="frame" x="147.5" y="198.5" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="ELs-WV-04h"/>
-                                    <constraint firstAttribute="width" constant="100" id="fXx-8f-0lN"/>
+                                    <constraint firstAttribute="height" constant="80" id="6if-eJ-Nmb"/>
+                                    <constraint firstAttribute="width" constant="80" id="JsA-lH-aL5"/>
                                 </constraints>
-                            </view>
+                            </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="nxY-OB-VY1">
                                 <rect key="frame" x="10" y="220" width="355" height="37"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOB-t0-IdX">
-                                <rect key="frame" x="10" y="368" width="355" height="30"/>
+                                <rect key="frame" x="10" y="358" width="355" height="30"/>
                                 <state key="normal" title="TrackActivity Test"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZOB-t0-IdX" firstAttribute="top" secondItem="cIb-4M-aeH" secondAttribute="bottom" constant="80" id="2V5-Kk-5Qh"/>
                             <constraint firstItem="nxY-OB-VY1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="2Y5-Kz-Q3d"/>
+                            <constraint firstItem="ZOB-t0-IdX" firstAttribute="top" secondItem="mob-Ju-5qP" secondAttribute="bottom" constant="80" id="6Dr-fO-do0"/>
                             <constraint firstItem="nxY-OB-VY1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="TDV-4f-7Mj"/>
                             <constraint firstItem="ZOB-t0-IdX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="VR2-9C-vY8"/>
-                            <constraint firstItem="nxY-OB-VY1" firstAttribute="centerY" secondItem="cIb-4M-aeH" secondAttribute="centerY" id="boQ-xT-KnD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nxY-OB-VY1" secondAttribute="trailing" constant="10" id="fFr-3U-bFe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZOB-t0-IdX" secondAttribute="trailing" constant="10" id="g8G-Ko-gJK"/>
-                            <constraint firstItem="cIb-4M-aeH" firstAttribute="centerX" secondItem="nxY-OB-VY1" secondAttribute="centerX" id="kRB-Mv-aYp"/>
+                            <constraint firstItem="mob-Ju-5qP" firstAttribute="centerX" secondItem="nxY-OB-VY1" secondAttribute="centerX" id="gWW-d2-W9B"/>
+                            <constraint firstItem="mob-Ju-5qP" firstAttribute="centerY" secondItem="nxY-OB-VY1" secondAttribute="centerY" id="lwq-PL-Anc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="TrackActivityOulet" destination="nxY-OB-VY1" id="Q6m-mY-tCk"/>
-                        <outlet property="backgroundView" destination="cIb-4M-aeH" id="4oT-nP-STt"/>
+                        <outlet property="backgroundView" destination="mob-Ju-5qP" id="vOv-8h-0qU"/>
                         <outlet property="trackActivityButton" destination="ZOB-t0-IdX" id="GYz-Zq-oIU"/>
                     </connections>
                 </viewController>
@@ -57,4 +57,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="spinner-box" width="180" height="180"/>
+    </resources>
 </document>

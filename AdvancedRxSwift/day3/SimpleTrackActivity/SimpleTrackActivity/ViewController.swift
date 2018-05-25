@@ -11,7 +11,7 @@ import RxCocoa
 
 class ViewController: UIViewController {
     @IBOutlet weak var TrackActivityOulet: UIActivityIndicatorView!
-    @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var backgroundView: UIImageView!
     @IBOutlet weak var trackActivityButton: UIButton!
     var disposeBag = DisposeBag()
     
