@@ -108,7 +108,7 @@
 
 **Day 5.**
 
-- Schedulers
+- Schedulers : observeOn, subscribeOn
 
 - UnitTest : RxTest, RxBlocking (case: input is an observable, case: output is an observable)
 
