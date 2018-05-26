@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Scan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syn-EM-z8x">
+                                <rect key="frame" x="10" y="120" width="355" height="30"/>
+                                <state key="normal" title="Boolean Switch"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKu-bm-TaE">
+                                <rect key="frame" x="10" y="200" width="355" height="30"/>
+                                <state key="normal" title="Counter"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWK-K4-8F1">
+                                <rect key="frame" x="10" y="280" width="355" height="30"/>
+                                <state key="normal" title="Last N Values"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Syn-EM-z8x" secondAttribute="trailing" constant="10" id="1lg-BX-kLL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HKu-bm-TaE" secondAttribute="trailing" constant="10" id="3fr-BM-8L0"/>
+                            <constraint firstItem="KWK-K4-8F1" firstAttribute="top" secondItem="HKu-bm-TaE" secondAttribute="bottom" constant="50" id="REH-ZP-JWW"/>
+                            <constraint firstItem="Syn-EM-z8x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="SCS-Ib-6qf"/>
+                            <constraint firstItem="HKu-bm-TaE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="UQI-Zt-s2a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KWK-K4-8F1" secondAttribute="trailing" constant="10" id="eO1-TJ-DBM"/>
+                            <constraint firstItem="KWK-K4-8F1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="iBT-tB-Lfb"/>
+                            <constraint firstItem="Syn-EM-z8x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="lOv-EY-Lia"/>
+                            <constraint firstItem="HKu-bm-TaE" firstAttribute="top" secondItem="Syn-EM-z8x" secondAttribute="bottom" constant="50" id="nbn-HH-F0h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="counterButton" destination="HKu-bm-TaE" id="o3J-P9-xiD"/>
+                        <outlet property="lastNValuesButton" destination="KWK-K4-8F1" id="X6C-il-dtH"/>
+                        <outlet property="switchButton" destination="Syn-EM-z8x" id="oci-Gj-FZa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
