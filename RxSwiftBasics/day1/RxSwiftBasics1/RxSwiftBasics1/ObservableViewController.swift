@@ -27,6 +27,7 @@ class ObservableViewController: UIViewController {
 
     @IBAction func observableOfTest(_ sender: UIButton) {
         Observable.of(1, 2, 3)
+            .debug()
             .subscribe(onNext: { some in
                 print(some)
             })

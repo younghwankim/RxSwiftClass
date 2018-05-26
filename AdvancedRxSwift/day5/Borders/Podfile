@@ -8,4 +8,14 @@ target 'Borders' do
   # Pods for Borders
   pod 'RxSwift'
   pod 'RxCocoa'
+  
+end
+
+target 'BordersTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxTest'
+    pod 'RxBlocking'
 end
