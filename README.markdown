@@ -59,7 +59,7 @@
 
 - RxCocoa ( Button, TextField, Label )
 
-- TableView binding TableView, TableViewCell
+- TableView binding
 
 - Lab
 
@@ -92,6 +92,8 @@
 **Day 3.**
 
 - Binding Track Activity (show / hide ‘Loading’)
+
+- Scan Operator
 
 - Lab
 

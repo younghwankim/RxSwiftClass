@@ -59,6 +59,6 @@
 
 - RxCocoa ( Button, TextField, Label )
 
-- TableView binding TableView, TableViewCell
+- TableView binding
 
 - Lab

@@ -28,6 +28,8 @@
 
 - Binding Track Activity (show / hide ‘Loading’)
 
+- Scan Operator
+
 - Lab
 
 
