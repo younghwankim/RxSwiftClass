@@ -98,10 +98,11 @@
 
 **Day 4.**
 
-- RxCocoa
+- Adding a Reactive Extension to Custom UI Element
 
-- Advanced tableview binding
-- 2-way binding
+- Binding, 2 Way Binding
+
+- Advanced TableView – RxDataSources
 
 - Lab
 
