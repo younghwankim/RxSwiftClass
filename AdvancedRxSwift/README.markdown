@@ -9,7 +9,7 @@
 
 - Quick review : Protocol-Oriented Programming in Swift : WWDC 2015 Session 408
 
-- Group Interface (protocol Extension, Associate type)
+- Grouping Interfaces (protocol Extension, Associate type)
 
 - Lab
 
