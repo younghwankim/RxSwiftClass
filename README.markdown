@@ -118,9 +118,9 @@
 
 - Unit Test (RxTest, RxBlocking)
 
-- When an input is an observable,
+- When an input is observable,
 
-- When an output is an observable
+- When an output is observable
 
 - Integration test with RxBlocking
 
