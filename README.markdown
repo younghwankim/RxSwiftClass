@@ -82,7 +82,7 @@
 **Day 2.**
 
 - MVVM with RxSwift - Sample
-- API Call using Open API
+- API Call using Open API (https://restcountries.eu)
 - Data Model
 - UI Binding
 - QuickType Tool
