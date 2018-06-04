@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oj0-21-nmo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oj0-21-nmo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,16 +25,54 @@
                                     <segue destination="65S-qp-d7G" kind="show" id="VoF-zF-FVH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a7-Nr-rdZ">
+                                <rect key="frame" x="10" y="284" width="355" height="30"/>
+                                <state key="normal" title="isHidden Test"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izc-WH-6wQ">
+                                <rect key="frame" x="10" y="354" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2P-KZ-2yH">
+                                <rect key="frame" x="10" y="415" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkn-li-Eor">
+                                <rect key="frame" x="10" y="476" width="355" height="30"/>
+                                <state key="normal" title="KVO Test"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Nkn-li-Eor" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="3OY-1n-xp0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1a7-Nr-rdZ" secondAttribute="trailing" constant="10" id="Gwq-XM-HLI"/>
+                            <constraint firstItem="1a7-Nr-rdZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="MxH-Q7-jPH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v2P-KZ-2yH" secondAttribute="trailing" constant="10" id="RPj-KC-d1u"/>
+                            <constraint firstItem="izc-WH-6wQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Rng-8a-Rlw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="izc-WH-6wQ" secondAttribute="trailing" constant="10" id="WRy-Tg-mfM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bem-3R-QTE" secondAttribute="trailing" constant="10" id="bYg-1Z-MzV"/>
+                            <constraint firstItem="v2P-KZ-2yH" firstAttribute="top" secondItem="izc-WH-6wQ" secondAttribute="bottom" constant="40" id="dUQ-3b-FxG"/>
                             <constraint firstItem="bem-3R-QTE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="e1h-9Q-Ndw"/>
+                            <constraint firstItem="1a7-Nr-rdZ" firstAttribute="top" secondItem="bem-3R-QTE" secondAttribute="bottom" constant="40" id="iWU-TY-KXM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nkn-li-Eor" secondAttribute="trailing" constant="10" id="igh-bX-yp1"/>
+                            <constraint firstItem="izc-WH-6wQ" firstAttribute="top" secondItem="1a7-Nr-rdZ" secondAttribute="bottom" constant="40" id="jOY-vi-dJc"/>
+                            <constraint firstItem="v2P-KZ-2yH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="p9f-R8-N9V"/>
+                            <constraint firstItem="Nkn-li-Eor" firstAttribute="top" secondItem="v2P-KZ-2yH" secondAttribute="bottom" constant="40" id="tSb-qE-qxa"/>
                             <constraint firstItem="bem-3R-QTE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="vao-gc-dju"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="hDk-rR-Yco"/>
+                    <connections>
+                        <outlet property="isHiddenButton" destination="1a7-Nr-rdZ" id="xKq-FO-uJb"/>
+                        <outlet property="kvoTestButton" destination="Nkn-li-Eor" id="zfS-Qz-kFH"/>
+                        <outlet property="oneLabel" destination="izc-WH-6wQ" id="9cC-Z7-xZ8"/>
+                        <outlet property="twoLabel" destination="v2P-KZ-2yH" id="xDW-vz-USD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

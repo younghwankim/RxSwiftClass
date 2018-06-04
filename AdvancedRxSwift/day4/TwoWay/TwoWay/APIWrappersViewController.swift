@@ -24,7 +24,7 @@ extension UILabel {
     }
 }
 
-class APIWrappersViewController: ViewController {
+class APIWrappersViewController: UIViewController {
 
     @IBOutlet weak var debugLabel: UILabel!
 
