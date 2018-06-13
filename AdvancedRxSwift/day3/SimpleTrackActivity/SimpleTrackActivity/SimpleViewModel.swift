@@ -11,8 +11,8 @@ import RxCocoa
 
 class SimpleViewModel {
     // Is signing process in progress
-    let signingIn: Observable<Bool>
     let signingInIndicator = ActivityIndicator()
+    let signingIn: Observable<Bool>
     
     init() {
         self.signingIn = signingInIndicator.asObservable()

@@ -14,11 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var backgroundView: UIImageView!
     @IBOutlet weak var trackActivityButton: UIButton!
     var disposeBag = DisposeBag()
+    let viewModel = SimpleViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let viewModel = SimpleViewModel()
         
         viewModel.signingIn
             .bind(to: TrackActivityOulet.rx.isAnimating)
@@ -34,13 +33,8 @@ class ViewController: UIViewController {
             .disposed(by: disposeBag)
         
         trackActivityButton.rx.tap.asDriver()
-            .drive(onNext: { [unowned self] _ in
-                viewModel.simpleObservable()
-                    .observeOn(MainScheduler.instance)
-                    .trackActivity(viewModel.signingInIndicator)
-                    .subscribe(onNext: { _ in
-                    })
-                    .disposed(by: self.disposeBag)
+            .drive(onNext: { [weak self] _ in
+                self?.activityButtonAction()
             }).disposed(by: disposeBag)
     }
 
@@ -49,8 +43,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func buttonAction() {
-        
+    func activityButtonAction() {
+        self.viewModel.simpleObservable()
+            .observeOn(MainScheduler.instance)
+            .trackActivity(viewModel.signingInIndicator)
+            .subscribe(onNext: { _ in
+            })
+            .disposed(by: self.disposeBag)
     }
 
 }
