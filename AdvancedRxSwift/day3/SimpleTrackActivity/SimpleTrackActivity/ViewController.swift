@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             .disposed(by: disposeBag)
         
         trackActivityButton.rx.tap.asDriver()
-            .drive(onNext: { _ in
+            .drive(onNext: { [unowned self] _ in
                 viewModel.simpleObservable()
                     .observeOn(MainScheduler.instance)
                     .trackActivity(viewModel.signingInIndicator)
@@ -49,6 +49,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func buttonAction() {
+        
+    }
 
 }
 
