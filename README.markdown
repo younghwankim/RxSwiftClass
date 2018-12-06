@@ -12,7 +12,7 @@
 
 - Observables in Practice 1 (Lab)
 
-- Filter, map, flatMap, merge, concat operator
+- filter, map, flatMap, merge, concat operator
 
 - Lab
 
