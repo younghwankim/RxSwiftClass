@@ -38,7 +38,7 @@
 **Day 4**
 
 
-- Observables in Observable
+- Nested Observable
 
 - Enumeration
 
